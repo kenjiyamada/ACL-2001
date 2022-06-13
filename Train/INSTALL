@@ -1,0 +1,5 @@
+Installation step for training program for syntax-based TM
+
+% cd src; make			# compile train gserver and tserver
+% edit scp/setup-train.pl 	# change $Base="/usr/local/tools/Stx/Train" if necessary
+

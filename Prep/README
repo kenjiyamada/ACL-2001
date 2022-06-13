@@ -1,0 +1,33 @@
+Corpus preparation for syntax-based model
+
+(see ../INSTALL for instlattion of this software)
+
+
+* Step 1: Tokenize, tag and parse your corpus
+
+English tokenizer and tagger
+	-> see ../MXPOST/README
+	(use tokenizer.sed and tag3.sh)
+
+English parser
+	-> see ../collins-parser.linux/README
+	(use parse3.pl)
+
+
+* Step 2: Create your working directory. Create put tokenized and parsed
+corpus into subdirectory (tokenized and parsed).
+
+% mkdir yourDir
+% cd yourDir
+% mkdir tokenized parsed
+% cp yourTokenized/*.[ef] tokenized/		# symlink will work too
+% cp yourParsed/*.e parsed/			# symlink will work too
+
+
+* Step 3: run a script to create files for training
+
+% cd yourDir
+% cp /usr/local/Stx/Prep/run-prep.conf ./
+% edit run-prep.conf	# to override default params
+% /usr/local/Stx/Prep/run-prep.sh
+	

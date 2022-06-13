@@ -1,0 +1,20 @@
+PROB 1125 -51.8255 0 
+TOP -51.8255 S -36.5543 NP-A -27.2262 NPB -11.6985 JJ 0 mary
+               NNS 0 loves
+               NNS 0 apples
+           PRN -8.74029 -LRB- 0 -LRB-
+               NP -1.79503 NPB -1.39948 NNS 0 bananas
+               -RRB- 0 -RRB-
+      ADVP -0.145511 RB 0 too
+(TOP~apples~1~1 (S~apples~2~1 (NP-A~apples~2~1 (NPB~apples~3~3 mary/JJ loves/NNS apples/NNS ) (PRN~-LRB-~3~1 -LRB-/-LRB- (NPB~bananas~1~1 bananas/NNS ) -RRB-/-RRB- ) ) (ADVP~too~1~1 too/RB ./PUNC. ) ) ) 
+TIME 0
+PROB 879 -54.0102 0 
+TOP -54.0102 S -49.5897 NP-A -0.839431 NPB -0.545876 NNP 0 Mary
+      VP -37.6869 VBZ 0 loves
+         NP-A -16.6381 NPB -1.11034 NNS 0 apples
+              PRN -8.74029 -LRB- 0 -LRB-
+                  NP -1.79503 NPB -1.39948 NNS 0 bananas
+                  -RRB- 0 -RRB-
+         ADVP -0.145511 RB 0 too
+(TOP~loves~1~1 (S~loves~2~2 (NPB~Mary~1~1 Mary/NNP ) (VP~loves~3~1 loves/VBZ (NP-A~apples~2~1 (NPB~apples~1~1 apples/NNS ) (PRN~-LRB-~3~1 -LRB-/-LRB- (NPB~bananas~1~1 bananas/NNS ) -RRB-/-RRB- ) ) (ADVP~too~1~1 too/RB ./PUNC. ) ) ) ) 
+TIME 0

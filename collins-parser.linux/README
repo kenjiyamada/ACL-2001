@@ -1,0 +1,10 @@
+Collins Parser for Linux
+
+- use tokenizer and tagger in ../MXPOST.
+
+note: please change $ParseDir directory in parse3.pl to tell where
+      you installed collins parser.
+
+Usage:
+% parse3.pl [-maxw nw] [-maxc nc] < test.pos > test.par
+	Default: -maxw 20 -maxc 1000

@@ -1,0 +1,6 @@
+CMU-Cambridge Statistical Language Modeling Tookit v2
+
+- download from http://svr-www.eng.cam.ac.uk/~prc14/toolkit.html
+- put binaries (idngram2lm text2idngram text2wfreq wfreq2vocab) into ../SLM/bin/
+  directory.
+

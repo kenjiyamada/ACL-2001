@@ -1,0 +1,8 @@
+MXPOST Tagger (by Adwait Ratnaparkhi, from www.cis.upenn.edu/~adwait)
+	- needs JDK 1.1
+	- needs capitalization
+	- needs special tokenization (use tokenizer.sed,
+		 downloaded from www.cis.upenn.edu/~treebank/tokenizer.sed)
+
+% tokenizer.sed < test.sen > test.in
+% tag3.sh < test.in > test.out	# please edit tag3.sh to specify where you install MXPOST

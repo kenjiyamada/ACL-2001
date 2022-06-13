@@ -1,0 +1,15 @@
+Installation steps for corpus preparation tools for syntax-based TM
+
+- download MXPOST (see ../MXPOST/README)
+- download Collins' parser (see ../collins-parser.linux/README)
+- download SLM-V2 (see ../SLM/README)
+
+- modify ../MXPOST/tag3.sh (as instructed in ../MXPOST/README)
+- modify ../collins-parser.linux/parse3.pl (as instructed in ../collins-parser.linux/README)
+
+- make binary (cd src; make all)
+- modify ./run-prep.sh (to set Base= directory)
+
+
+- follow instruction ../README
+

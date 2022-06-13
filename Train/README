@@ -1,0 +1,30 @@
+Training on localhost
+
+note: only one job can ran on a host, since it uses special TCP ports
+
+Copy your preprocessed data (for preprocessing, see ../Prep/README)
+% cd yourDirectory
+% mkdir Data
+% copy {train,test,align}.bxi vocab.[ef] sym.tbl Tables/prob.tbl*   to Data/
+
+Setup a directory
+% mkdir LVn3; cd LVn3 (for each experiment)
+% create train.conf < /usr/local/tools/Stx/Train/train.conf
+	# change parameters if needed
+% /usr/local/tools/Stx/Train/scp/setup-train.pl		# it will create job.sh, etc
+
+Run the training job
+% job.sh	# it will create and execute run[12].sh
+
+Decide the best iteration count (NIter=n)
+These can be checked by looking into the test perplexity and/or
+looking into the alignment.
+
+Set MakePh and MakeF0 to obtain phrase list and fertility zero context.
+
+To see test perplexity
+% egrep 'start|prob' train.out
+
+To Obtain alignment file
+% egrep '^[AEF]' align.tree > align.alg
+
